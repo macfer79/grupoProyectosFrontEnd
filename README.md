@@ -10,7 +10,7 @@ Si quieres unirte, adelante...
 
 ## Roadmap
 
-- El primer proyecto será realizar una plantilla de portafolio. El desarrollo se discutirá por Discord.
+- El primer proyecto será realizar una plantilla de portafolio y el desarrollo se discutirá por Discord.
 
 
 ## 🛠 Herramientas
