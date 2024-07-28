@@ -1,26 +1,23 @@
-*{
-    font-family: "Quicksand", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
     margin: 0px;
     padding: 0px;
-
 }
 
-body{
-    background-color: #B2D3D3;
+body {
+    background-color: #b2d3d3;
     font-size: 16px;
-    
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*NAV*/
 
-.nav-links{
-    display: flex;
-    gap: 20px;
-
-}
-
-nav{
-    background-color: #82BDBD;
+nav {
+    background-color: #82bdbd;
     height: 56px;
     width: 490px;
     display: flex;
@@ -32,23 +29,33 @@ nav{
     left: 70%;
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+
+    li {
+        list-style: none;
+    }
 }
 
-.nav-links a{
-    line-height: normal;
-    padding-left: 20px;
-    font-size: 14px;
-    text-decoration: none;
-    color: #333;
-    transition: all 0.3s ease;
+.nav-links {
+    display: flex;
+    gap: 20px;
+
+    a {
+        line-height: normal;
+        padding-left: 20px;
+        font-size: 14px;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #000;
+            font-weight: bold;
+        }
+    }
 }
 
-.nav-links a:hover{
-    color: #000;
-    font-weight: bold;
-}
 
-nav button{
+nav button {
     margin-right: 20px;
     cursor: pointer;
     display: flex;
@@ -59,14 +66,26 @@ nav button{
     height: 32px;
     width: 122px;
     background-color: #000;
-    color:#fff;
+    color: #fff;
     border-radius: 8px;
     border: none;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        border: none;
+    }
 }
 
-nav button:hover{
-    background-color: #fff;
-    color: #000;
-    border: none;
-}
+/*FOOTER*/
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5vh;
+    background-color: #82bdbd;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+}
